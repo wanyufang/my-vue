@@ -387,7 +387,7 @@ export default {
     init () {
       getAllUsers(this.userobj)
         .then(res => {
-          // console.log(res)
+          console.log(res)
           if (res.data.meta.status === 200) {
             this.userList = res.data.data.users
             // 获取记录总数
